@@ -1,6 +1,12 @@
 # Bati Bank Credit Scoring using Machine Learning Model
 
-A machine learning model developed to predict credit risk and assign credit scores, supporting data-driven lending decisions for Bati Bank's Buy-Now-Pay-Later (BNPL) service in collaboration with an eCommerce platform.
+Bati Bank, a prominent financial services provider, is partnering with an eCommerce company to introduce a buy-now-pay-later service. This initiative requires the development of a robust Credit Scoring Model that will evaluate customers' creditworthiness and assign a credit score. The model is expected to predict the likelihood of default and help determine optimal loan amounts and terms.
+The credit scoring system is designed to:
+1.	Identify high-risk vs. low-risk customers based on transaction history.
+2.	Predict default risk for potential customers.
+3.	Assign credit scores based on estimated default probabilities.
+4.	Optimize loan amounts and durations based on customer risk profiles.
+
 
 ## Project Directory Structure
 
@@ -10,14 +16,12 @@ The repository is organized into the following directories:
 
 `.vscode/`: Configuration files for the Visual Studio Code editor, optimizing the development environment.
 
-`api`: Contains the implementation of the machine learning model API, allowing interaction with the model through RESTful endpoints.
-
 `notebooks/`: Jupyter notebooks used for tasks such as data exploration, feature engineering, and preliminary modeling.
 
-`scripts/`: Python scripts for data preprocessing, feature extraction, and the implementation of the credit scoring model.
+`src/`: Python scripts for data preprocessing, feature extraction, and the implementation of the credit scoring model.
 
 `tests/`: Unit tests to ensure the correctness and robustness of the implemented model and data processing logic.
-
+`api`: Contains the implementation of the machine learning model API, allowing interaction with the model through RESTful endpoints.
 
 
 ## Installation Instructions
@@ -26,7 +30,7 @@ To run the project locally, follow these steps:
 
 1. Clone the Repository:
 >>>>
-    git clone https://github.com/epythonlab/bati-bank-credit-scoring.git`
+    git clone https://github.com/eliasgirmah/Bati_Bank_Credit_Scoring_Master.git`
 
     cd bati-bank-credit-scoring
 >>>>
@@ -34,16 +38,6 @@ To run the project locally, follow these steps:
 2. Set up the Virtual Environment:
 
 Create a virtual environment to manage the project's dependencies:
-
-**For Linux/MacOS**
-
->>>
-    python3 -m venv .venv
-
-    source .venv/bin/activate  
->>>
-
-**For Windows:**
 
 >>>
     python -m venv .venv
@@ -57,9 +51,4 @@ Install the required Python packages by running:
     pip install -r requirements.txt
 >>>
 
-## Contributing
- We welcome contributions to improve the project. Please follow the steps below to contribute:
 
-- Fork the repository.
-- Create a new branch for your feature or bugfix.
-- Submit a pull request with a detailed explanation of your changes.
